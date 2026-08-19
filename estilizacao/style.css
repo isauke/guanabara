@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(#008C1C, #125920);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif; /* Adicione uma fonte para melhor leitura */
+    min-height: 100vh;
+}
+
+main {
+    background-color: #cacecac2;
+    border-radius: 10px;
+    width: 67%;
+    max-width: 800px; /* Evita que fique largo demais em telas grandes */
+    padding: 20px; /* Aumentei um pouco o padding para o texto não colar na borda */
+    margin: 40px auto; /* Margem superior para não colar no topo */
+    box-shadow: 5px 5px 20px #000000;
+}
+
+#principal {
+    text-align: center;
+    color: #ffbb1b;
+    text-shadow: 2px 2px 10px black;
+}
+
+h2 { color: #470200; }
+
+p {
+    color: #531e1c;
+    transition: text-shadow 0.7s ease, transform 0.7s ease;
+}
+
+p:hover {
+    text-shadow: 16px 16px 16px #000000;
+    /* Se quiser um efeito visual, use transform ao invés de mudar o alinhamento */
+    /* transform: scale(1.01); */ 
+}
+
+span {
+    color: #2c7a3c;
+    transition: color 0.5s ease;
+    cursor: pointer; /* Indica que é interativo */
+}
+
+span:hover {
+    color: #000000;
+}   

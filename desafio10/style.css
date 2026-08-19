@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+body{background-color: #a8c281; margin: 0; padding: 0;}
+*{
+    font-family: "Roboto"
+}
+/*CABEÇALHO*/
+header{padding: 20px;background: linear-gradient( #32A868,#1A5735); box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.616);}
+.tituloPrincipal{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+header > h1,p{margin: 20px;text-align: center;}
+header > p{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-bottom:10px;
+}
+.linksMenu{
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 10px;
+}
+header > nav{padding: 0px;margin: 0px;}
+header > nav > .linksMenu{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    
+}
+.linksMenu:hover{background-color: #2b945a;}
+
+/*MAIN*/
+
+main{
+    margin: auto;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.479);
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+main>article>h2 {
+    font-family: 'idroid';
+    color: #267F4E;
+    padding: 20px 0px 0px 10px;
+    margin: 0px;
+}
+main>article>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 1.5em; /* Recua a primeira linha em 1.5 vezes o tamanho da fonte */
+    margin-bottom: 0;
+}
+
+.importante{
+    color: #1A5735;
+    font-weight: bold;
+}
+
+.android{
+    font-family: 'idroid';
+    color: #267F4E;
+    margin: 10px;
+    background: linear-gradient(to right,#49f5967e, white);
+}
+.linknoTexto{
+    text-decoration: none;
+    color: #267F4E;
+    font-weight: bold;
+}
+.linknoTexto::after{
+    content: " \1F517"; /* Caractere Unicode */
+    font-size: 0.8em;
+    margin-left: 3px;
+}
+main>article>img {
+    display: block; /* Transforma a imagem em bloco */
+    margin: auto;
+}
+
+
+.espacoVideo {
+    padding: 24px 0; /* espaço em cima e embaixo dentro do main */
+}
+
+.caixaVideo {
+    width: 100%;
+    background-color: #1A5735; /* verde escuro */
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.meuvideo {
+    margin: 18% 11% 13% 11%; /* deixa o verde aparecer ao redor, como no print */
+    width: 78%;
+    height: 0;
+    /* padding-top é % da largura do PAI (.caixaVideo), não da própria .meuvideo.
+       Como a .meuvideo já é 78% do pai, a conta pra 16:9 fica: 0.5625 × 0.78 = 43.875% */
+    padding-top: 43.875%;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.meuvideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.divextra{
+    width: 85%;
+    margin: 0% auto;
+    border-radius: 5px;
+    background-color: #49F597;
+}
+.extra{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #267F4E;
+    padding: 10px 11px;
+    margin: 0px;
+    color: white;
+}
+.divextra>p{
+    font-family: "Roboto";
+    text-align: start;
+    text-indent: 1.5em; /* Recua a primeira linha em 1.5 vezes o tamanho da fonte */
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+.divextra>ol{
+    list-style: none;
+    display: inline-block;
+    text-decoration: underline;
+    margin:  0% 9%;
+}
+.divextra>ol>li::before{
+    content: "✓ ";
+}
+.fim{
+    margin-top:20px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #1A5735;
+    color: aliceblue;
+    font-family: 'idroid';
+    text-align: center;
+    font-size: 16px;
+}
+.fim>p>a{
+    color: rgb(219, 217, 217);
+    transition: 0.5s;
+}
+.fim>p>a:hover{
+    font-size: 20px;
+    color: black;
+}
