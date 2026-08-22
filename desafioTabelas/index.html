@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+        body{
+            height: 100vh;
+            background-color: #BB99FF;
+        }
+        h1{
+            font-family: "Sriracha", cursive;
+            color: #2A0081;
+        }
+        .tabela1,tabela2{
+            border: 1px black solid;
+        }
+        td{
+            text-align: center;
+            border: 1px black solid;
+            padding: 10px;
+            width: 35px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tabela 1</h1>
+    <table class="tabela1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <h1>tabela 2</h1>
+    <table class="tabela2">
+        <tr>
+            <td colspan="4">a</td>
+            <td rowspan="5">b</td>
+        </tr>
+            <td rowspan="5">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        <tr>
+
+        </tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        <tr>
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">n</td>
+        </tr>
+
+        <tr>
+
+        </tr>
+    </table>
+    <p>Dia 22/08/2024. Em uma semana eu fiz o módulo 2 e 3 do curso de html+css do guanabara.</p>
+    <p>Sendo que o módulo 2 eu terminei em 4 dias, e o 3 em 3 dias, e nesse mesmo dia que eu terminei o módulo 3
+    eu vou iniciar o módulo 4.
+    </p>
+</body>
+</html>
