@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Tabela Gigante Exemplo</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  thead {
+    background-color: #2c3e50;
+    color: #ffffff;
+    position: sticky; /* Mantém o cabeçalho visível ao rolar */
+    top: 0;
+  }
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  tfoot {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  /* Limita a altura e adiciona rolagem */
+  .table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+  }
+  .cid{
+    background-color: green;
+  }
+</style>
+</head>
+<body>
+
+<h2>Exemplo de Tabela de Dados Extensa</h2>
+
+<div class="table-container">
+  <table>
+    <colgroup>
+        <col class="cid">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome do Produto</th>
+        <th>Categoria</th>
+        <th>Preço (R$)</th>
+        <th>Estoque</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Linhas de exemplo (em uma tabela gigante, isso se repetiria milhares de vezes) -->
+      <tr>
+        <td>1001</td>
+        <td>Notebook Gamer X</td>
+        <td>Eletrônicos</td>
+        <td>4.500,00</td>
+        <td>15</td>
+        <td>Disponível</td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>Cadeira Ergonômica</td>
+        <td>Móveis</td>
+        <td>890,00</td>
+        <td>42</td>
+        <td>Disponível</td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>Monitor 27 pol</td>
+        <td>Eletrônicos</td>
+        <td>1.200,00</td>
+        <td>0</td>
+        <td>Esgotado</td>
+      </tr>
+      <tr>
+        <td>1004</td>
+        <td>Teclado Mecânico</td>
+        <td>Acessórios</td>
+        <td>350,00</td>
+        <td>120</td>
+        <td>Disponível</td>
+      </tr>
+      <tr>
+        <td>1005</td>
+        <td>Mouse Sem Fio</td>
+        <td>Acessórios</td>
+        <td>150,00</td>
+        <td>200</td>
+        <td>Disponível</td>
+      </tr>
+      <!-- Imagine aqui mais 995 linhas para totalizar 1000 -->
+      <tr>
+        <td colspan="6" style="text-align:center; color:#999;">... (mais 995 linhas de dados) ...</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Total de Itens no Estoque</td>
+        <td>377</td>
+        <td>-</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+</body>
+</html>   
