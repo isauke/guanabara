@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="naozei" autocomplete="on">
+        <p>
+            <label for="inome">Digite seu nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Digite seu nome" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Digite a média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+        </p>
+        <p>
+            <label for="ilet">Periodo letivo</label>
+            <input type="month" name="let" id="ilet" value="2003-04">
+        </p>
+        <p>
+            <input type="submit" name="enviar">
+            <input type="reset" value="">
+        </p>
+    </form>
+</body>
+
+</html>
