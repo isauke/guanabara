@@ -16,6 +16,7 @@
     }
     #formulario > p{
         font-size: 1.2em;
+        text-align: center;
     }
 }
 @media screen and (min-width: 992px){
@@ -36,5 +37,6 @@
     }
     #formulario > p{
         font-size: 1.2em;
+        text-align: center;
     }
 }
