@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media print{
+    body{
+        background: url(../../imagens/back-print.jpg);
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        color: black;
+    }
+    #cel{display: none;}
+    #tv{display: none;}
+    #pc{display: none;}
+    #tablet{display: none;}
+    #impressao{display: block;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background: url(../../imagens/back-tablet.jpg);
+    }
+    #cel{display: none;}
+    #tv{display: none;}
+    #pc{display: none;}
+    #tablet{display: block;}
+    #impressao{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background: url(../../imagens/back-pc.jpg);
+    }
+    #cel{display: none;}
+    #tv{display: none;}
+    #pc{display: block;}
+    #tablet{display: block;}
+    #impressao{display: none;}
+    
+}
+@media screen and (min-width: 1200px){
+    body{
+        background: url(../../imagens/back-tv.jpg);
+    }
+    #cel{display: none;}
+    #tv{display: block;}
+    #pc{display: none;}
+    #tablet{display: none;}
+    #impressao{display: none;}
+    
+}
+
