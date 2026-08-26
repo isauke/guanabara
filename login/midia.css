@@ -1,9 +1,10 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
     body{
         background: linear-gradient(to top, rgb(160, 158, 158), rgb(43, 41, 41) );
     }
     section#login{
         width: 80vw;
+        height: 280px;
     }
     #imagem{
         float: left;
@@ -17,14 +18,16 @@
     #formulario > p{
         font-size: 1.2em;
         text-align: center;
+        margin: 5px 0px;
     }
 }
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1100px){
     body{
         background: linear-gradient(to top, rgb(172, 172, 172), rgb(32, 32, 32) );
     }
     section#login{
-        width: 950px;
+        width:950px;
+        height: 320px;
     }
     #imagem{
         float: right;
@@ -36,7 +39,8 @@
         width: 50%;
     }
     #formulario > p{
-        font-size: 1.2em;
+        font-size: 1.5em;
         text-align: center;
+        margin: 5px 0px;
     }
 }
