@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+.header {
+  background: #ffd166;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 90px;
+  margin-bottom: 40px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.toolbar button {
+  flex: 1;
+  background: #ef476f;
+  border: 2px solid #333;
+  border-radius: 6px;
+  height: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: #06d6a0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 120px;
+}

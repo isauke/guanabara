@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura do site</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #ffffff;
+      font-family: sans-serif;
+    }
+
+    header {
+      background: #040b6d;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      background: #ef476f;
+      border-radius: 6px;
+      padding: 6px 16px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    main section {
+      background: #06d6a0;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #ffd166;
+      border: 2px solid #333;
+      min-height: 60px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </main>
+
+  <footer></footer>
+
+</body>
+
+</html>
